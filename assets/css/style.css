@@ -1,3 +1,7 @@
+:root {
+    --highlight-color: aqua;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,22 +9,25 @@
 }
 
 body {
-    background-color: gray;
 }
 
 header {
-    background-color: greenyellow;
     display: flex;
+    padding-left: 50px;
     justify-content: space-between;
+    background-color: slategray;
+    align-items: center;
     
 }
 
-header h2 {
+header h1 {
+    background-color: var(--highlight-color);
+    font-weight: bolder;
 
 }
 
 nav {
-    display: flex;
+padding-right: 100px;
 }
 
 nav ul {
@@ -36,7 +43,28 @@ nav ul li {
     font-size: 25px;
 }
 
+nav ul li a {
+}
+
+.hero {
+    background-image: url("../images/hero.jpg");
+    background-position: center;
+    background-size:cover;
+    padding: 275px 150px 25px 20px;
+    display: flex;
+    justify-content: end;
+    
+    
+}
+
+.hero h2 {
+    color: black;
+    background-color: var(--highlight-color);
+    font-size: 350%;
+    padding: 10px;
+}
 
 .hero img {
     width: 100%;
 }
+
